@@ -1,18 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies at Hand | Home</title>
-  </head>
-  <body>
-      <h2>Movies at Hand</h2>
-      <h3>Search for movies by one of the following:</h3>
-      <ul>
-          <li>Release year</li>
-          <li>Genre (ex. Comedy, Action, Drama)</li>
-          <li>Rating</li>
-          <li>Name</li>
-      </ul>
-  </body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Movies At Hand</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="images/moviesicon.png"/>
+        <link rel="stylesheet" href="css/lightslider.css" />                  
+        <script src="js/jquery.js"></script>
+        <script src="js/lightslider.js"></script>
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <!--navigation logo-->
+            <a href="#" class="logo">
+                <img src="images/logo.png"/>
+            </a>
+             <!--menu-->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+            </ul>
+            <!--search bar-->
+            <div class="search">
+                <input type="text" placeholder="Favorite Movie"/>
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+        <section id="main">
+            <h1 class="showcase-heading">Something Cool Here</h1>
+            <ul id="autoWidth" class="cs-hidden">
+              <li class="item-a">
+                <div class="showcase-box">
+                  <img src="images/movie1.jpg"/>
+                </div>
+              </li>
+              <li class="item-b">
+                <div class="showcase-box">
+                  <img src="images/movie1.jpg"/>
+                </div>
+              </li>
+              <li class="item-c">
+                <div class="showcase-box">
+                  <img src="images/movie1.jpg"/>
+                </div>
+              </li>
+              <li class="item-d">
+                <div class="showcase-box">
+                  <img src="images/movie1.jpg"/>
+                </div>
+              </li>
+              <li class="item-e">
+                <div class="showcase-box">
+                  <img src="images/movie1.jpg"/>
+                </div>
+              </li>
+              <li class="item-f">
+                <div class="showcase-box">
+                  <img src="images/movie1.jpg"/>
+                </div>
+              </li>
+
+              </ul>
+            
+        </section>
+     <!--slider-->
+     <script>
+         $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+     });  
+    });
+     </script>
+    </body>
 </html>
