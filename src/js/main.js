@@ -1,6 +1,8 @@
-import API_KEY from "./API_KEY"
+// import API_KEY from "./API_KEY"
 
-console.log(API_KEY)
+// console.log(API_KEY)
+
+const API_KEY = "28faa7ff"
 
 const searchMovies = async (searchPhrase) => {
    fetch(`http://www.omdbapi.com/?s=${searchPhrase}&apikey=${API_KEY}`)
