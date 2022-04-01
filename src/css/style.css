@@ -95,3 +95,13 @@ nav .menu li a:hover{
     font-size: 1.2rem;
     color: black;
 }
+footer {
+    background-color: #a9a9a9;
+    align-items: center;
+    text-align: center;
+}
+#footer img  {
+    width: 30px;
+    padding: 0 0;
+    margin-top: -20px;
+}
