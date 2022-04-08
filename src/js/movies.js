@@ -28,3 +28,4 @@ const renderMovieCard = (movie) => {
 }
 
 createMovieCards()
+

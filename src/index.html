@@ -10,7 +10,6 @@
   <script src="js/jquery.js"></script>
   <script src="js/lightslider.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/sliderDisplay.js"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -36,8 +35,8 @@
     <ul id="autoWidth" class="cs-hidden">
       <li class="item-a">
         <div class="showcase-box">
-          <a>
-          <img id="movieN" type="image"  src=https://m.media-amazon.com/images/M/MV5BYzFmMTcwZjYtZmEwNi00MjNlLWE1MzYtMDdlNjcxODNhYThhXkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg onclick="movieN('Captain Marvel')"/>
+          <a onclick="moviePage('Capitain Marvel')" href="movie_listing/movie.html" type="image"  >
+          <img src=https://m.media-amazon.com/images/M/MV5BYzFmMTcwZjYtZmEwNi00MjNlLWE1MzYtMDdlNjcxODNhYThhXkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg />
           </a>
         </div>
         
@@ -45,7 +44,7 @@
 
       <li class="item-b">
         <div class="showcase-box">
-           <a href="movie_listing/index.html" id="movieN" value="Avengers" onclick="movieN()" >
+           <a onclick="moviePage('Avengers')" href="movie_listing/movie.html" type="image" >
           <img src=https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_FMjpg_UY474_.jpg />
           
           </a>
@@ -54,7 +53,16 @@
 
       <li class="item-c">
         <div class="showcase-box">
+          <a onclick="moviePage('Sonic')" href="movie_listing/movie.html" type="image" >
           <img src=https://m.media-amazon.com/images/M/MV5BNTBjZTBlN2YtOWQzZC00YTAzLWFiOWUtYzRiZWRmNjA5YWFmXkEyXkFqcGdeQXVyMTA0NTIyOTQ@._V1_FMjpg_UY709_.jpg />
+          </a>
+        </div>
+      </li>
+      <li class="item-d">
+        <div class="showcase-box">
+          <a onclick="moviePage('John Wick 3')" href="movie_listing/movie.html" type="image" >
+          <img src=https://m.media-amazon.com/images/M/MV5BMDg2YzI0ODctYjliMy00NTU0LTkxODYtYTNkNjQwMzVmOTcxXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_FMjpg_UX1000_.jpg />
+          </a>
         </div>
       </li>
 
